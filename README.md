@@ -56,12 +56,12 @@ Se utilizó Visual Studio Code, Jupyter Notebook y Python con las siguientes lib
 ### Transformación de datos
 Principalmente se trabaja en la lectura del dataset en el formato correcto, eliminando columnas innecesarias, creando nuevas columnas, desanidando datos para conservar solo los útiles, y realizando las transformaciones solicitadas y necesarias para mantener los datos esenciales para resolver las consultas. A partir del proceso de ETL se exportan dos archivos de tipo parquet, [df_filtrado.parquet](https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/df_filtrado.parquet) es aquel utilizado para seguir con el proceso de EDA y por otro lado [streaming_functions.parquet](https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/streaming_functions.parquet) es aquel utilizado para responder a las consultas en la API.
 
-*Nota: El proceso de ETL realizado en esta etapa puede verse con detalle en el notebook [ETL_Streaming](https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/ETL_Streaming.ipynb).*
+*Nota: El proceso de ETL realizado en esta etapa puede verse con detalle en el notebook [ETL_Streaming](https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/ETL_EDA/ETL_Streaming.ipynb).*
 
 ### Análisis Exploratorio de Datos (EDA)
-El análisis exploratorio de datos se comienza a realizar con un dataset previamente tratado en la etapa de ETL, llamado [df_filtrado.parquet]( https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/df_filtrado.parquet). El objetivo de esta etapa es identificar relaciones entre variables, detectar anomalías y outliers y descubrir patrones que sean útiles para entender los datos y decidir qué utilizar para el modelo. A partir de este proceso se obtiene un archivo [streaming_model.parquet](https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/streaming_model.parquet), el cual es utilizado para el modelo de recomendación.
+El análisis exploratorio de datos se comienza a realizar con un dataset previamente tratado en la etapa de ETL, llamado [df_filtrado.parquet](https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/df_filtrado.parquet). El objetivo de esta etapa es identificar relaciones entre variables, detectar anomalías y outliers y descubrir patrones que sean útiles para entender los datos y decidir qué utilizar para el modelo. A partir de este proceso se obtiene un archivo [streaming_model.parquet](https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/streaming_model.parquet), el cual es utilizado para el modelo de recomendación.
 
-*Nota: El proceso de EDA realizado en esta etapa puede verse con detalle en el notebook [EDA](https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/ETL_Streaming.ipynb).*
+*Nota: El proceso de EDA realizado en esta etapa puede verse con detalle en el notebook [EDA](https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/ETL_EDA/EDA.ipynb).*
 
 ### Desarrollo de la API
 Se propone disponibilizar los datos de la empresa usando el *framework* **FastAPI** y desplegarlo a través de [RENDER]( https://render.com/). 
