@@ -1,8 +1,9 @@
 # SISTEMA DE RECOMENDACIÓN DE PELICULAS - MACHINE LEARNING OPERATIONS
 
 <p align="center">
-  <img src="images/MLOps.png" alt="Rol de un MLOps Engineer" width="600" />
+  <img src="images/MLOps.png" alt="Rol de un MLOps Engineer" />
 </p>
+
 
 ## Descripción del proyecto
 En este proyecto se busca desarrollar una API para consultas con un sistema de recomendación de películas utilizando datos de plataformas de Streaming. La API proporciona varios endpoints que permiten consultar información entre otras acerca de películas, directores y actores, pero lo más importante es la implementación de un sistema de recomendación de películas a través de un modelo de Machine Learning.
@@ -112,4 +113,5 @@ Es útil mencionar explícitamente las decisiones tomadas, como la optimización
 Eliana Larregola
 
 [LinkedIn](https://recomendacion-streaming.onrender.com/Docs)
+
 [GitHub](https://github.com/EliLarregola)
