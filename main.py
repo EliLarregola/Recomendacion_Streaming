@@ -50,6 +50,7 @@ def cantidad_filmaciones_dia(dia: str):
 
 
 # Puntaje según título
+
 @app.get("/score_titulo/{titulo}")
 def score_titulo(titulo: str):
     df = load_data()
