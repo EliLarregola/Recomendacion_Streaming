@@ -48,7 +48,7 @@ Se utilizó Visual Studio Code, Jupyter Notebook y Python con las siguientes lib
 ## Metodología
 
 ### Transformación de datos
-Principalmente se trabaja en la lectura del dataset en el formato correcto, eliminando columnas innecesarias, creando nuevas columnas, desanidando datos para conservar solo los útiles, y realizando las transformaciones solicitadas y necesarias para mantener los datos esenciales para resolver las consultas.
+Principalmente se trabaja en la lectura del dataset en el formato correcto, eliminando columnas innecesarias, creando nuevas columnas, desanidando datos para conservar solo los útiles, y realizando las transformaciones solicitadas y necesarias para mantener los datos esenciales para resolver las consultas. A partir del proceso de ETL se exportan dos archivos de tipo parquet, [df_filtrado.parquet](https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/df_filtrado.parquet) es aquel utilizado para seguir con el proceso de EDA y por otro lado [streaming_functions.parquet]([ https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/df_filtrado.parquet](https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/streaming_functions.parquet) es aquel utilizado para responder a las consultas en la API.
 
 *Nota: El proceso de ETL realizado en esta etapa puede verse con detalle en el notebook [ETL_Streaming](https://github.com/EliLarregola/Recomendacion_Streaming/blob/main/ETL_Streaming.ipynb).*
 
